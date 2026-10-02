@@ -1710,3 +1710,24 @@
         }
 
         function nextSlide() {
+            playSound('click');
+            if (currentSlide < PITCH_SLIDES.length) showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            playSound('click');
+            if (currentSlide > 1) showSlide(currentSlide - 1);
+        }
+
+        function openPitchModal() {
+            playSound('click');
+            document.getElementById('pitch-modal').classList.remove('hidden');
+        }
+
+        function closePitchModal() {
+            playSound('click');
+            document.getElementById('pitch-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
